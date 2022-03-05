@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo">Fitness</a>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="http://www.fit7.in/">Home</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Trainer</a></li>
+          <li><a href="https://classpass.com/afterclass/7-fitness-blogs-to-inspire-your-next-workout/">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </header>
+      <div class="content">
+          <div class="contentBx">
+              <h2>Build Perfect Body</br>
+                  With Clean Mind</h2>
+                <p> The meaning of life is not simply to exist, to survive,
+                  but to move ahead, to go up, to conquer. ...</p>
+                  <a href="#">Get Started</a>
+          </div>
+      </div>
+      <ul class="sci" >
+          <li><a href="https://www.facebook.com/Fit7Global/"><img src="facebook.png"></a></li>
+          <li><a href="https://twitter.com/fit7global"><img src="twitter.png"></a></li>
+          <li><a href="https://www.instagram.com/fit7global/"><img src="instagram.png"></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const toggleMenu = document.querySelector(".toggleMenu");
+            const navigation=document.querySelector(".navigation");
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+  </body>
+</html>
